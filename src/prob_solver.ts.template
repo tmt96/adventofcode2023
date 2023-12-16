@@ -5,15 +5,11 @@ type Output1 = number;
 type Output2 = number;
 
 export class ProblemSolver extends BaseProblemSolver<Input, Output1, Output2> {
-  constructor() {
-    super(1);
-  }
-
   parseInput1(input: string[]): Input {
     return input;
   }
 
-  protected parseInput2(input: string[]): Input {
+  parseInput2(input: string[]): Input {
     return input
   }
 

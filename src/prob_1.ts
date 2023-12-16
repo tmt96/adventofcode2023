@@ -1,10 +1,6 @@
 import { BaseProblemSolver } from './BaseProblemSolver';
 
-export class ProblemSolver1 extends BaseProblemSolver<number[], number, number> {
-  constructor() {
-    super(1);
-  }
-
+export class ProblemSolver extends BaseProblemSolver<number[], number, number> {
   parseInput1(input: string[]): number[] {
     return input.map(line => {
       const digits = line.match(/[0-9]/g)!;

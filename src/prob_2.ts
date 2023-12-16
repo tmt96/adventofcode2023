@@ -12,11 +12,7 @@ type Input = Game[];
 type Output1 = number;
 type Output2 = number;
 
-export class ProblemSolver2 extends BaseProblemSolver<Input, Output1, Output2> {
-  constructor() {
-    super(2);
-  }
-
+export class ProblemSolver extends BaseProblemSolver<Input, Output1, Output2> {
   private parseGame(game: string): Game {
     const turnsDescription = game.split(':')[1].trim().split(';');
     return turnsDescription.map(description => {
