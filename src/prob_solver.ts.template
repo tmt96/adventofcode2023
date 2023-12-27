@@ -10,7 +10,7 @@ export class ProblemSolver extends BaseProblemSolver<Input, Output1, Output2> {
   }
 
   parseInput2(input: string[]): Input {
-    return input
+    return this.parseInput1(input);
   }
 
   question1(input: Input): Output1 {
@@ -18,6 +18,6 @@ export class ProblemSolver extends BaseProblemSolver<Input, Output1, Output2> {
   }
 
   question2(input: Input): Output2 {
-    return ;
+    return 0;
   }
 }
