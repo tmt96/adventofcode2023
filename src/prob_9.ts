@@ -14,7 +14,7 @@ export class ProblemSolver extends BaseProblemSolver<Input, Output1, Output2> {
   }
 
   question1(input: Input): Output1 {
-    const extrapolate = (numbers: number[]) => {
+    const extrapolate = (numbers: number[]): number => {
       if (numbers.every(num => num === 0)) {
         return 0;
       }
@@ -31,7 +31,7 @@ export class ProblemSolver extends BaseProblemSolver<Input, Output1, Output2> {
   }
 
   question2(input: Input): Output2 {
-    const extrapolate = (numbers: number[]) => {
+    const extrapolate = (numbers: number[]): number => {
       if (numbers.every(num => num === 0)) {
         return 0;
       }
